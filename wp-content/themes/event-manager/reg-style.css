@@ -1869,6 +1869,10 @@ html[xmlns] .clearfix {
  *
  */ 
 
+#introduction {
+	padding: 10px 0;
+}
+
 #Introduction p,
 #Addendum p{
 	color: rgba(252,227,171,1);
@@ -1879,7 +1883,8 @@ html[xmlns] .clearfix {
 	color: #444;
 }
 
-input {
+#bookingpage input,
+#bookingpage select {
 	background: #fff;
 }
 
