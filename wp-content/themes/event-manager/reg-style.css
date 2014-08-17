@@ -1895,11 +1895,15 @@ table#layoutTable,
 }
 
 #bookingpage input[type="submit"]:hover {
-	background-color: rgba(252,227,171,1);
+	background-color:  rgba(47,48,45,1);
+	color: rgba(252,227,171,1);
 }
 
 #bookingpage input[type="submit"] {
 	cursor: pointer;
+	color:  rgba(47,48,45,1);
+	background-color: rgba(252,227,171,1);
+	height: 50px;
 }
 
 #bookingpage li {
@@ -1908,4 +1912,12 @@ table#layoutTable,
 
 img {
 	margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+	#bookingpage input,
+	#bookingpage select,
+	#bookingpage textarea {
+		width: 100%;
+	}
 }
