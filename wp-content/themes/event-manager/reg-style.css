@@ -1869,8 +1869,8 @@ html[xmlns] .clearfix {
  *
  */ 
 
-#introduction {
-	padding: 10px 0;
+#bookingpage #introduction {
+	padding: 0 20px 20px 20px;
 }
 
 #Introduction p,
