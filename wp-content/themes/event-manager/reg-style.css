@@ -1889,8 +1889,17 @@ table#layoutTable,
 }
 
 #bookingpage input,
-#bookingpage select {
+#bookingpage select,
+#bookingpage textarea {
 	background: #fff;
+}
+
+#bookingpage input[type="submit"]:hover {
+	background-color: rgba(252,227,171,1);
+}
+
+#bookingpage input[type="submit"] {
+	cursor: pointer;
 }
 
 #bookingpage li {
