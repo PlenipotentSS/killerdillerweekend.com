@@ -1914,6 +1914,10 @@ img {
 	margin: 20px 0;
 }
 
+.errorText {
+	padding: 20px;
+}
+
 @media only screen and (max-width: 600px) {
 	#bookingpage input,
 	#bookingpage select,
