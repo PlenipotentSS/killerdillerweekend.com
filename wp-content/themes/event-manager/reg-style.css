@@ -1869,7 +1869,8 @@ html[xmlns] .clearfix {
  *
  */ 
 
-#layoutTable {
+table#layoutTable
+#bookingpage #layoutTable {
 	width: 100%;
 }
 
