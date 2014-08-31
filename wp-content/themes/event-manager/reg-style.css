@@ -1883,7 +1883,8 @@ table#layoutTable,
 	color: rgba(252,227,171,1);
 }
 
-.form_register {
+.form_register,
+.form_confirm {
 	background-color: #FDFDFD;
 	color: #444;
 }
