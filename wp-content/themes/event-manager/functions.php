@@ -221,14 +221,14 @@ function cs_event_description() {
 	<span class="icon"></span>';
 	$location_url = esc_url( genesis_get_option( 'event_location_url', 'social-coup' ) );
 	if( !empty( $location_url ) )
-		$location .= '<a class="title" href="' . $location_url . '" target="new">' . genesis_get_option( 'event_location_title', 'social-coup' ) . '</a>';
+		$location .= '<a class="title" href="' . $location_url . '">' . genesis_get_option( 'event_location_title', 'social-coup' ) . '</a>';
 	else
-		$location .= '<span class="title" target="new">' . genesis_get_option( 'event_location_title', 'social-coup' ) . '</span>';
+		$location .= '<span class="title">' . genesis_get_option( 'event_location_title', 'social-coup' ) . '</span>';
 	$location .= '
 	<span class="subtitle">' . genesis_get_option( 'event_location_subtitle', 'social-coup' ) . '</span>
 	</div></div>';
 
-	$register = '<div class="one-third"><a class="register" href="' . esc_url( genesis_get_option( 'event_register_link', 'social-coup' ) ) . '">
+	$register = '<div class="one-third"><a class="register" target="new" href="' . esc_url( genesis_get_option( 'event_register_link', 'social-coup' ) ) . '">
 	<span class="subtitle">' . genesis_get_option( 'event_register_subtitle', 'social-coup' ) . '</span>
 	<span class="title">' . genesis_get_option( 'event_register_title', 'social-coup' ) . '</span>
 	</a></div><div class="clearfix"></div>';
