@@ -1884,7 +1884,8 @@ table#layoutTable,
 }
 
 .form_register,
-.form_confirm {
+.form_confirm,
+#layoutTable {
 	background-color: #FDFDFD;
 	color: #444;
 }
@@ -1917,6 +1918,10 @@ img {
 
 .errorText {
 	padding: 20px;
+}
+
+#viewbookingoptions {
+	color: rgba(252,227,171,1);
 }
 
 @media only screen and (max-width: 600px) {
