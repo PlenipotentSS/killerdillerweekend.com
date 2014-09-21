@@ -1496,6 +1496,10 @@ a.button,
 	background: url(images/icon-facebook.png) no-repeat;
 }
 
+.btn-youtube {
+	background: url(images/icon-youtube.png) no-repeat;
+}
+
 .btn-flickr {
 	background: url(images/icon-flickr.png) no-repeat;
 }
