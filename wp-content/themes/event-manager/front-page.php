@@ -108,6 +108,13 @@ function sc_home_loop() {
 	echo '</div>';
 	
 	echo '<div class="cl"></div>';
+	echo '<div style="float:left; width: 100%;">';
+	$home_page_post_id = 5;
+	$content_post = get_post($home_page_post_id);
+	setup_postdata( $content_post, null, false );
+	the_content();
+    wp_reset_postdata();
+	echo '</div>';
 }
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action( 'genesis_loop', 'sc_home_loop' );
