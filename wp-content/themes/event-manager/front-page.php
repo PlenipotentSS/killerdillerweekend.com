@@ -109,7 +109,7 @@ function sc_home_loop() {
 	
 	echo '<div class="cl"></div>';
 	echo '<div style="float:left; width: 100%;">';
-	$home_page_post_id = 5;
+	$home_page_post_id = 861;
 	$content_post = get_post($home_page_post_id);
 	setup_postdata( $content_post, null, false );
 	the_content();
