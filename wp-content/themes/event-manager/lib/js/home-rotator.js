@@ -10,7 +10,7 @@ jQuery(document).ready (function(){
 		scrollEasingAmount:600,
 		acceleration:4,
 		noScrollCenterSpace:10,
-		autoScrolling:5,
+		autoScrolling:0,
 		autoScrollingSpeed:25000,
 		autoScrollingEasing:"linear",
 		autoScrollingDelay:5000

@@ -80,12 +80,29 @@ function genesis_do_nav() {
 		if ( ! $nav )
 			return;
 
-		$nav_markup_open = genesis_markup( array(
-			'html5'   => '<nav %s>',
-			'xhtml'   => '<div id="nav">',
-			'context' => 'nav-primary',
-			'echo'    => false,
-		) );
+		$nav_markup_open;
+
+		if ( is_front_page() == 1 ) {
+			$nav_markup_open = genesis_markup( array(
+				'html5'   => '<div class="vid-wrap"><video id="hero-video-preview" preload autoplay loop>
+	            <source src="https://s3-us-west-2.amazonaws.com/kdw2014/vids/30secondnohash.mp4" type="video/mp4">
+	        Your browser does not support the video tag.
+	        </video><nav %s>',
+				'xhtml'   => '<div class="vid-wrap"><video id="hero-video-preview" preload autoplay loop>
+	            <source src="https://s3-us-west-2.amazonaws.com/kdw2014/vids/30secondnohash.mp4" type="video/mp4">
+	        Your browser does not support the video tag.
+	        </video><div id="nav">',
+				'context' => 'nav-primary',
+				'echo'    => false,
+			) );
+		} else {
+			$nav_markup_open = genesis_markup( array(
+					'html5'   => '<div><nav %s>',
+					'xhtml'   => '<div id="nav">',
+			        'context' => 'nav-primary',
+			        'echo'    => false,
+			) );
+		}
 		$nav_markup_open .= genesis_structural_wrap( 'menu-primary', 'open', 0 );
 
 		$nav_markup_close  = genesis_structural_wrap( 'menu-primary', 'close', 0 );

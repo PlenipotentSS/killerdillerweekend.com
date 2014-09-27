@@ -825,9 +825,10 @@ add_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 function genesis_header_markup_close() {
 
 	genesis_structural_wrap( 'header', 'close' );
+
 	genesis_markup( array(
 		'html5' => '</header>',
-		'xhtml' => '</div>',
+		'xhtml' => '</div></div>',
 	) );
 
 }
