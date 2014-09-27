@@ -1734,7 +1734,6 @@ html[xmlns] .clearfix {
 .vid-wrap {
 	position: relative;
 	overflow: hidden;
-	min-height: 400px;
 	background-color: rgba(47,48,45,1);
 }
 
