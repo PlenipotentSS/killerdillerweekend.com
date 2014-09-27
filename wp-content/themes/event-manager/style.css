@@ -141,7 +141,6 @@ div#header div.wrap {
 	/*background: #fafafa;*/
 	background: rgba(47,48,45,1);
 	min-height: 80px;
-	overflow: hidden;
 	width: 100%;
 }
 
