@@ -1928,7 +1928,7 @@ html[xmlns] .clearfix {
 		margin-top: -40px;
 	}
 
-	.video-container { 
+	.vid-wrap video{ 
 		display: none;
 	}
 }
