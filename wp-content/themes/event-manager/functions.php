@@ -211,7 +211,7 @@ background-size: contain;}</style>', $image );
  */
 function cs_event_description() {
 
-	$eventTracking = "_gaq.push(['_trackEvent', 'Register', 'Clicked', 'Registration Accessed']);";
+	$eventTracking = "ga('send', 'event', 'Register', 'Clicked', 'Registration Accessed', 10);";
 
 
 	$date = '<div class="one-third first"><div class="date">
