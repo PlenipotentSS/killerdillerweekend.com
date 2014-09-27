@@ -1744,7 +1744,11 @@ html[xmlns] .clearfix {
 	position: absolute;
 	bottom: 50%;
 	right: 50%;
-	transform: translateX( 50% ) translateY( 50% );
+	-webkit-transform: translateX( 50% ) translateY( 50%);
+	-moz-transform: translateX( 50% ) translateY( 50%);
+	-ms-transform: translateX( 50% ) translateY( 50%);
+	-o-transform: translateX( 50% ) translateY( 50%);
+	transform: translateX( 50% ) translateY( 50%);
 }
 
 #header p {
@@ -1756,22 +1760,11 @@ html[xmlns] .clearfix {
 	position: absolute;
 	left: 50%;
 	width: 100%;
-	transform: translateX( -50%);
-}
-
-.video-container {
-	width: 100%;
-	position: relative;
-	height: 400px;
-	background-color: rgba(47,48,45,1);
-	overflow: hidden;
-}
-
-.video-container video {
-	position:absolute;
-	bottom: 50%;
-	max-width: 100%;
-	transform: translateY( 50% );
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 /* Responsive
