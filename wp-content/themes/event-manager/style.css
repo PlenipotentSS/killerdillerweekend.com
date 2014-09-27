@@ -224,6 +224,10 @@ li li a .sf-sub-indicator {
 	width: 100%;
 }
 
+#nav .wrap {
+	display: table;
+}
+
 #nav ul {
 	float: left;
 	width: 100%;
@@ -1835,6 +1839,10 @@ html[xmlns] .clearfix {
 	#nav .searchform {
 		float: left;
 		margin: 10px 0 0;
+	}
+
+	#nav .wrap {
+		display: block;
 	}
 
 	/* Resize Site Title */
