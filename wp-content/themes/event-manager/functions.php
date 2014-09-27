@@ -211,6 +211,9 @@ background-size: contain;}</style>', $image );
  */
 function cs_event_description() {
 
+	$eventTracking = "_gaq.push(['_trackEvent', 'Register', 'Clicked', 'Registration Accessed']);";
+
+
 	$date = '<div class="one-third first"><div class="date">
 	<span class="icon">' . genesis_get_option( 'event_date_icon', 'social-coup' ) . '</span>
 	<span class="title">' . genesis_get_option( 'event_date_title', 'social-coup' ) . '</span>
@@ -228,8 +231,7 @@ function cs_event_description() {
 	<span class="subtitle">' . genesis_get_option( 'event_location_subtitle', 'social-coup' ) . '</span>
 	</div></div>';
 
-	$eventTracking = "_gaq.push(['_trackEvent', 'Register', 'Clicked', 'Registration Accessed']);";
-	$register = '<div class="one-third" onclick="' . $eventTracking .'"><a class="register" target="new" href="' . esc_url( genesis_get_option( 'event_register_link', 'social-coup' ) ) . '">
+	$register = '<div class="one-third"><a class="register" onclick="' . $eventTracking .'" target="new" href="' . esc_url( genesis_get_option( 'event_register_link', 'social-coup' ) ) . '">
 	<span class="subtitle">' . genesis_get_option( 'event_register_subtitle', 'social-coup' ) . '</span>
 	<span class="title">' . genesis_get_option( 'event_register_title', 'social-coup' ) . '</span>
 	</a></div><div class="clearfix"></div>';
