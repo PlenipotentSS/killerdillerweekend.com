@@ -228,7 +228,8 @@ function cs_event_description() {
 	<span class="subtitle">' . genesis_get_option( 'event_location_subtitle', 'social-coup' ) . '</span>
 	</div></div>';
 
-	$register = '<div class="one-third"><a class="register" target="new" href="' . esc_url( genesis_get_option( 'event_register_link', 'social-coup' ) ) . '">
+	$eventTracking = "_gaq.push(['_trackEvent', 'Register', 'Clicked', 'Registration Accessed']);";
+	$register = '<div class="one-third" onclick="' . $eventTracking .'"><a class="register" target="new" href="' . esc_url( genesis_get_option( 'event_register_link', 'social-coup' ) ) . '">
 	<span class="subtitle">' . genesis_get_option( 'event_register_subtitle', 'social-coup' ) . '</span>
 	<span class="title">' . genesis_get_option( 'event_register_title', 'social-coup' ) . '</span>
 	</a></div><div class="clearfix"></div>';
